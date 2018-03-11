@@ -10,10 +10,14 @@ function ready(fn) {
 
 var phrases = [
     "Hi there!",
-    "Aloha!",
-    "こんにちは!",
     "Bonjour!",
+    "こんにちは!",
+    "Tjena!",
+    "你好",
     "¡Hola!",
+    "안녕",
+    "Aloha!",
+    "Привет",
 ];
 
 function master() {
@@ -22,6 +26,7 @@ function master() {
         typeSpeed: 40,
         backSpeed: 40,
         backDelay: 1500,
+        startDelay: 1000,
         loop: true
     });
 }

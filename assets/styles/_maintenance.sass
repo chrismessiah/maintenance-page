@@ -1,3 +1,5 @@
+$weight: 100
+
 html,
 body
   height: 100%
@@ -6,8 +8,8 @@ body
   padding: 0
   width: 100%
   display: table
-  font-weight: 100
-  font-family: 'Lato'
+  font-weight: $weight
+  font-family: 'Roboto'
   .container
     text-align: center
     display: table-cell
@@ -16,13 +18,23 @@ body
       text-align: center
       display: inline-block
       #title-container
-        height: 120px
+        height: 75px
+        @media screen and (min-width: 450px)
+          height: 120px
         overflow: hidden
+        .typed-cursor
+          @extend .typed-cursor-boiler
         #title
-          font-size: 96px
-          font-weight: 100
+          font-weight: $weight
           margin-bottom: 20px
+        #title,
+        .typed-cursor
+          font-size: 66px
+          @media screen and (min-width: 450px)
+            font-size: 96px
       h2
-        font-size: 48px
-        font-weight: 100
+        font-size: 36px
+        @media screen and (min-width: 450px)
+          font-size: 48px
+        font-weight: $weight
         margin-top: 20px
